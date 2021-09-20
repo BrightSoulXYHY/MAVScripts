@@ -1,0 +1,256 @@
+{
+  "SettingsVersion": 1.2,
+  "SimMode": "Multirotor", 
+  "DefaultVehicleConfig": "SimpleFlight",
+  "ViewMode": "FlyWithMe",
+  "UsageScenario": "",
+  "RpcEnabled": true,
+
+  "Recording": {
+    "RecordOnMove": false,
+    "RecordInterval": 0.05,
+    "Cameras": [
+      {
+        "CameraID": 0,
+        "ImageType": 0,
+        "PixelsAsFloat": false,
+        "Compress": true   
+      }
+    ]
+  },
+  "SubWindows": [
+    {
+      "WindowID": 0,
+      "CameraName": "front_center",
+      "ImageType": 0,
+      "Visible": true
+    },
+    {
+      "WindowID": 1,
+      "CameraName": "front_center",
+      "ImageType": 2,
+      "Visible": true
+    },
+    {
+      "WindowID": 2,
+      "CameraID": 3,
+      "ImageType": 0,
+      "Visible": true
+    }
+  ],
+  "CameraDefaults": {
+    "CaptureSettings": [
+      {
+        "ImageType": 0,
+        "Width": 640,            
+        "Height": 480,          
+        "FOV_Degrees": 100,
+        "AutoExposureSpeed": 100,
+        "AutoExposureBias": 0,
+        "AutoExposureMaxBrightness": 0.64,
+        "AutoExposureMinBrightness": 0.03,
+        "MotionBlurAmount": 0,
+        "TargetGamma": 1.0
+      },
+      {
+        "ImageType": 2,
+        "Width": 640,
+        "Height": 480,
+        "FOV_Degrees": 100    
+      }
+    ],
+    "NoiseSettings": [
+      {
+        "ImageType": 0,
+        "Enabled": true,
+        "RandContrib": 0.2,
+        "RandSpeed": 100000.0,
+        "RandSize": 1000.0,
+        "RandDensity": 3.0,
+
+        "HorzWaveContrib": 0,
+        "HorzWaveStrength": 0.08,
+        "HorzWaveVertSize": 1.0,
+        "HorzWaveScreenSize": 1.0,
+
+        "HorzNoiseLinesContrib": 0,
+        "HorzNoiseLinesDensityY": 0.01,
+        "HorzNoiseLinesDensityXY": 0.5,
+
+        "HorzDistortionContrib": 0,
+        "HorzDistortionStrength": 0.002
+      }
+    ]
+  },
+  "Vehicles": {
+    "drone_1": {
+      "VehicleType": "SimpleFlight",
+      "DefaultVehicleState": "Armed",
+      "EnableCollisionPassthrogh": false,
+      "EnableCollisions": true,
+      "AllowAPIAlways": true,
+      "RC": {
+        "RemoteControlID": 0,
+        "AllowAPIWhenDisconnected": false
+      },
+      "Cameras": {
+        "front_center": {
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 640,
+              "Height": 480,
+              "FOV_Degrees": 100,
+              "TargetGamma": 1.0
+            },
+            {
+              "ImageType": 2,
+              "Width": 640,
+              "Height": 480,
+              "FOV_Degrees": 100
+            }
+          ],
+          "NoiseSettings": [
+            {
+              "ImageType": 0,
+              "Enabled": true,
+              "RandContrib": 0.2,
+              "RandSpeed": 100000.0,
+              "RandSize": 1000.0,
+              "RandDensity": 3.0,
+
+              "HorzWaveContrib": 0,
+              "HorzWaveStrength": 0.08,
+              "HorzWaveVertSize": 1.0,
+              "HorzWaveScreenSize": 1.0,
+
+              "HorzNoiseLinesContrib": 0,
+              "HorzNoiseLinesDensityY": 0.01,
+              "HorzNoiseLinesDensityXY": 0.5,
+
+              "HorzDistortionContrib": 0,
+              "HorzDistortionStrength": 0.002
+            }
+          ],
+          "X": 0.5,
+          "Y": 0,
+          "Z": 0,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 0
+        },
+        "front_left": {
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 640,
+              "Height": 480,
+              "FOV_Degrees": 100,
+              "TargetGamma": 1.0
+            }
+          ],
+          "NoiseSettings": [
+            {
+              "ImageType": 0,
+              "Enabled": true,
+              "RandContrib": 0.2,
+              "RandSpeed": 100000.0,
+              "RandSize": 1000.0,
+              "RandDensity": 3.0,
+
+              "HorzWaveContrib": 0,
+              "HorzWaveStrength": 0.08,
+              "HorzWaveVertSize": 1.0,
+              "HorzWaveScreenSize": 1.0,
+
+              "HorzNoiseLinesContrib": 0,
+              "HorzNoiseLinesDensityY": 0.01,
+              "HorzNoiseLinesDensityXY": 0.5,
+
+              "HorzDistortionContrib": 0,
+              "HorzDistortionStrength": 0.002
+            }
+          ],
+          "X": 0.5,
+          "Y": -0.1,
+          "Z": 0,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 0
+        },
+        "front_right": {
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 640,
+              "Height": 480,
+              "FOV_Degrees": 100,
+              "TargetGamma": 1.0
+            }
+          ],
+          "NoiseSettings": [
+            {
+              "ImageType": 0,
+              "Enabled": true,
+              "RandContrib": 0.2,
+              "RandSpeed": 100000.0,
+              "RandSize": 1000.0,
+              "RandDensity": 3.0,
+
+              "HorzWaveContrib": 0,
+              "HorzWaveStrength": 0.08,
+              "HorzWaveVertSize": 1.0,
+              "HorzWaveScreenSize": 1.0,
+
+              "HorzNoiseLinesContrib": 0,
+              "HorzNoiseLinesDensityY": 0.01,
+              "HorzNoiseLinesDensityXY": 0.5,
+
+              "HorzDistortionContrib": 0,
+              "HorzDistortionStrength": 0.002
+            }
+          ],
+          "X": 0.5,
+          "Y": 0.1,
+          "Z": 0,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 0
+        }
+      },
+      "Sensors": {
+        "Barometer": {
+          "SensorType": 1,
+          "Enabled": true,
+          "PressureFactorSigma": 0.001825,
+          "PressureFactorTau": 3600,
+          "UncorrelatedNoiseSigma": 2.7,
+          "UpdateLatency": 0,
+          "UpdateFrequency": 50,
+          "StartupDelay": 0
+
+        },
+        "Imu": {
+          "SensorType": 2,
+          "Enabled": true,
+          "AngularRandomWalk": 0.3,
+          "GyroBiasStabilityTau": 500,
+          "GyroBiasStability": 4.6,
+          "VelocityRandomWalk": 0.24,
+          "AccelBiasStabilityTau": 800,
+          "AccelBiasStability": 36
+        },
+        "Magnetometer": {
+          "SensorType": 4,
+          "Enabled": true,
+          "NoiseSigma": 0.005,
+          "ScaleFactor": 1,
+          "NoiseBias": 0,
+          "UpdateLatency": 0,
+          "UpdateFrequency": 50,
+          "StartupDelay": 0
+        }
+      }
+    }
+  }
+}

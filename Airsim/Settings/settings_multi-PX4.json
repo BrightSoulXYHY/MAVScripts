@@ -1,0 +1,47 @@
+{
+  "SettingsVersion": 1.2,
+  "SimMode": "Multirotor", 
+  "ViewMode": "SpringArmChase",
+  "CameraDefaults": {
+    "CaptureSettings": [
+      {
+        "ImageType": 0,
+        "Width": 640,            
+        "Height": 480,          
+        "FOV_Degrees": 100,
+        "AutoExposureSpeed": 100,
+        "AutoExposureBias": 0,
+        "AutoExposureMaxBrightness": 0.64,
+        "AutoExposureMinBrightness": 0.03,
+        "MotionBlurAmount": 0,
+        "TargetGamma": 1.0
+      }
+    ]
+
+  },
+
+  "Vehicles": {
+    "PX4_01": {
+      "VehicleType": "PX4Multirotor",
+      "UseSerial": false,
+      "UseTcp": true,
+      "TcpPort": 4560,
+      "ControlIp": "192.168.1.128",
+      "ControlPortLocal": 14540,
+      "ControlPortRemote": 14580,
+      "LocalHostIp": "192.168.1.192",
+      "X": 0, "Y": 1, "Z": 0
+    },
+    "PX4_02": {
+        "VehicleType": "PX4Multirotor",
+        "UseSerial": false,
+        "UseTcp": true,
+        "TcpPort": 4561, 
+        "ControlIp": "192.168.1.128",
+        "ControlPortLocal": 14541,
+        "ControlPortRemote": 14581,
+        "LocalHostIp": "192.168.1.192",
+        "X": 0, "Y": -1, "Z": 0
+      }
+    }
+}
